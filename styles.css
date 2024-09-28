@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    animation: fadeIn 2s;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #4B2E2E;
+    flex-wrap: wrap;
+}
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    flex: 1;
+    transition: background-color 0.3s, color 0.3s;
+}
+nav a:hover {
+    background-color: #ffcc80;
+    color: black;
+}
+.container {
+    padding: 20px;
+    animation: fadeInUp 2s;
+}
+.section {
+    margin: 40px 0;
+}
+h2 {
+    color: #4B2E2E;
+}
+.portfolio-item {
+    margin: 20px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.portfolio-item:nth-child(1) {
+    animation: slideInLeft 1s;
+}
+.portfolio-item:nth-child(2) {
+    animation: slideInRight 1.5s;
+}
+.portfolio-item:nth-child(3) {
+    animation: slideInUp 2s;
+}
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    background-color: #ffefd5;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    animation: fadeIn 2s;
+}
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button {
+    background-color: #4B2E2E;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+form button:hover {
+    background-color: #ffcc80;
+    color: black;
+}
+@media (min-width: 600px) {
+    nav a {
+        flex: none;
+    }
+}
+@media (max-width: 599px) {
+    .container {
+        padding: 10px;
+    }
+    .section {
+        margin: 10px 0;
+    }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
