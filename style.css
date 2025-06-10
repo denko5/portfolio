@@ -1,0 +1,241 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.8;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #0d47a1, #2196f3);
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #1a1a1a;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #64b5f6;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #2196f3;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px;
+}
+
+.hero img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px rgba(33, 150, 243, 0.6);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/* Sections */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.section {
+    background-color: #1a1a1a;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 10px;
+    box-shadow: 0px 5px 12px rgba(33, 150, 243, 0.5);
+}
+
+/* Headings */
+.section h3 {
+    font-size: 1.8rem;
+    color: #bbdefb;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.section h4 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color: #64b5f6;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+/* Paragraphs */
+.section p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+/* Lists */
+.section ul {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.section ul li {
+    font-size: 1rem;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Certifications - Visual Enhancements */
+.certifications li {
+    position: relative;
+    padding-left: 30px;
+}
+
+.certifications li::before {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 5px;
+}
+
+/* Ongoing Certifications */
+.certifications .ongoing::before {
+    content: "🔄"; /* Rotating icon for currently participating */
+    color: #ffeb3b;
+}
+
+/* Completed Certifications */
+.certifications .completed::before {
+    content: "✅"; /* Check icon for completed */
+    color: #4caf50;
+}
+
+/* Links */
+a {
+    color: #64b5f6;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #bbdefb;
+    text-decoration: underline;
+}
+
+/* Scroll Animation */
+.section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Contact Section */
+#contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    text-align: center;
+}
+
+#contact a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0d47a1;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+#contact a:hover {
+    background: #2196f3;
+}
+
+#contact a::before {
+    content: "🔗";
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Responsive Contact Section */
+@media (max-width: 600px) {
+    #contact {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0d47a1;
+    font-size: 1rem;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero img {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
