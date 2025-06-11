@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <script src="index4.js" defer></script>
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <button id="toggleTheme" aria-label="Toggle theme">🌙</button>
+    </header>
+
+    <nav class="navbar">
+        <div class="logo">MySite</div>
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <!-- <a href="#about">About</a> -->
+            <a href="#resume">Resume Outline</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav><br>
+
+    <main class="homepage">
+        <section id="home" class="hero">
+            <img src="pic 1 (1).png" alt="My Profile Picture">
+            <p>Hi there 👋,<br>
+                meet <b>Denis Kombe Karisa</b>,<br>
+                a vibrant techie ready to offer solutions<br>
+                with tech beyond technology.
+            </p>
+        </section> 
+    </main>
+
+    <div class="container">
+        <section id="resume" class="section">
+            <h3>My Resume</h3>
+            
+            <h4><u>Skills</u></h4>
+            <button class="toggle-button" onclick="toggleSection('skills', this)">View More</button>
+            <div id="skills" class="hidden">
+                <ul>
+                    <li>Data Analytics and Visualization.</li>
+                    <li>Web Design and Development.</li>
+                    <li>Database Management.</li>
+                    <li>Technical Help Desk Support.</li>
+                    <li>Microsoft Office.</li>
+                    <li>Research, Analytical Thinking, and Problem Solving.</li>
+                    <li>Team Leadership and Strong Communication Skills both Verbal and Written.</li>
+                </ul>
+            </div>
+
+            <h4><u>Certifications</u></h4>
+            <button class="toggle-button" onclick="toggleSection('certifications', this)">View More</button>
+            <div id="certifications" class="hidden">
+                <ul>
+                    <li><b>Currently Participating</b><br>Data and Artificial Intelligence<br>Cyber Shujaa.</li>
+                    <li><b>Currently Participating</b><br>AZ-900: Azure Fundamentals<br>Udemy.</li>
+                    <li><b>March 2025</b><br>Data Analytics for Project Management<br>Udemy.</li>
+                    <li><b>August 2024</b><br>Data Analysis with MySQL and Tableau<br>Zindua School.<br><a href="#">Link to Certificate</a></li>
+                </ul>
+            </div>
+
+            <h4><u>Achievements</u></h4>
+            <button class="toggle-button" onclick="toggleSection('achievements', this)">View More</button>
+            <div id="achievements" class="hidden">
+                <ul>
+                    <li><b>Data Analysis Challenge with Zindua School.</b><br>
+                    I participated in this two-month challenge where I gained valuable skills in data analytics, data visualization, data storytelling, collaboration through teamwork, and presentation skills.<br>
+                    May 2024 - August 2024.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h3>My Projects</h3>
+            <ul>
+                <li><b>Campus Crib - Final Fourth Year Project</b><br>
+                October 2024 - April 2025<br>
+                Designed and developed a web-based platform with advanced search filters and integrated real-time chat functionalities to easily help campus students find off-campus hostels to rent.<br>
+                HTML, CSS, JavaScript, PHP, MySQL, Xampp.<br>
+                Link to the <a href="https://github.com/denko5/Campus-Crib">GitHub Repository.</a>
+                </li>
+                <li>
+                    <b>Exploratory Data Analysis with MySQL</b><br>
+                    Cleaned and analyzed a dataset of African products sold in Africa with over 1,000 sales records. I used MySQL Workbench to identify trends that provided insights into different products' performance and business strategy.<br>
+                    Link to the <a href="https://github.com/denko5/Sales-Analysis">GitHub Repository.</a>
+                </li>
+                <li><b>Web Scraping and Data Handling in Python</b><br>
+                    Used <i>requests & BeautifulSoup</i> libraries to extract data from a web page.<br>
+                    Parsed and cleaned the extracted data, then stored the structured data into a Pandas DataFrame.<br>
+                    Finally, I exported the final dataset to a .csv file.<br>
+                    I achieved this through the Data and AI program by Cyber Shujaa.<br>
+                    Link to the <a href="https://colab.research.google.com/drive/1TUai2mEbBYmzW4NjdvW05vQK-ZjZTBla?usp=sharing">Google Colab.</a>
+                </li>
+                <li><b>Netflix Data Wrangling</b><br>
+                    Using Python on Kaggle Notebooks, I focused on the complete data processing cycle for the Netflix Movies and TV Shows dataset on Kaggle.<br>
+                    Did thorough cleaning, anomaly detection, validation, and structuring the data to ensure data integrity.<br>
+                    I concluded meaningful visualizations to uncover insights.<br>
+                    I achieved this through the Data and AI program by Cyber Shujaa.<br>
+                    Link to the <a href="https://www.kaggle.com/code/deniskombe5gmailcom/data-wrangling-netflix-dataset">Kaggle Notebooks.</a>
+                </li>
+                <li>
+                    <b>Titanic Exploratory Data Analysis</b><br>
+                    Using Python, I did initial data exploration, identified patterns, distributions, and potential irregularities. To ensure data integrity, I also handled missing values and outliers, refining the dataset for deeper analysis.<br>
+                    Following data processing, I performed univariate, bivariate, and multivariate analysis, uncovering trends with key variables.<br>
+                    I achieved this through the Data and AI program by Cyber Shujaa.<br>
+                    Link to the <a href="https://www.kaggle.com/code/deniskombe5gmailcom/titanic-dataset-eda">Kaggle Notebooks.</a>
+                </li>
+                <li>
+                    <b>Business Intelligence on Power BI</b><br>
+                    <img src="" alt="Dashboard for Business Intelligence Project"><br>
+                    Focused on developing hands-on experience in Business Intelligence using Power BI for Hotel Management.<br>
+                    This project involved loading the hotel datasets into Power BI, transforming the data using Power Query, building DAX, and finally creating visualizations leading to a dashboard for presentation highlighting key metrics of the dataset.<br>
+                    I achieved this through the Data and AI program by Cyber Shujaa.<br>
+                    Link to the <a href="https://drive.google.com/drive/folders/1mB9-xq0VVQqda7Kqv43sVFVPAidpcmkm">Project files.</a>
+                </li>
+                <li>
+                    <b>More Upcoming Projects</b>
+                </li>
+            </ul>
+        </section>
+        <section id="contact" class="section">
+            <h3>My Professional Links</h3>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/deniskombe" class="social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/denko5" class="social-link" aria-label="GitHub">
+                <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="mailto:deniskombe5@gmail.com" class="social-link" aria-label="Email">
+                <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="https://www.tiktok.com/@code.ke" class="social-link" aria-label="TikTok">
+                <i class="fab fa-tiktok"></i> TikTok
+                </a>
+                <a href="https://medium.com/@deniskombe5/data-confidence-december-e62789a3135c" class="social-link" aria-label="Medium">
+                <i class="fab fa-medium"></i> Medium
+                </a>
+                <a href="https://x.com/d_w_denis?t=uV2-ptdwBHCjNg2HpSoMag&s=09" class="social-link" aria-label="Twitter">
+                <i class="fab fa-twitter"></i> X, Twitter
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Denis Kombe's Portfolio</p>
+    </footer>
+    <script>
+        function toggleSection(sectionId, button) {
+            const section = document.getElementById(sectionId);
+            if (section.classList.contains('hidden')) {
+                section.classList.remove('hidden');
+                button.textContent = 'View Less';
+            } else {
+                section.classList.add('hidden');
+                button.textContent = 'View More';
+            }
+        }
+    </script>
+</body>
+</html>
